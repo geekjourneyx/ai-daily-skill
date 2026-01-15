@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>AI Daily · 2026年1月13日 星期二</title>
     <meta name="description" content="每日 AI 前沿资讯，智能分类，快速掌握核心动态">
-    <meta name="keywords" content="Anthropic, Cowork, MedGemma, LangChain, Veo 3.1, Kling, Agent, MCP, World Model, RLM, AI, 人工智能, 机器学习, 深度学习, 资讯, 日报">
+    <meta name="keywords" content="Anthropic, Cowork, Claude Code, MedGemma, LangChain, Agent, Veo 3.1, Kling, MCP, RLM, AI, 人工智能, 机器学习, 深度学习, 资讯, 日报">
     <link rel="stylesheet" href="css/styles.css">
 </head>
 <body data-theme="blue">
@@ -24,11 +24,11 @@
             <section class="summary-card">
                 <h2 class="section-title">📌 今日核心摘要</h2>
                 <ul class="summary-list">
-                <li class="summary-item">Anthropic 成立 Labs 部门并推出 Cowork，整合 Claude Code 与 Computer Use，打造终端级智能体体验。</li>
-                <li class="summary-item">Google 发布 MedGemma 1.5 与 MedASR，提供支持 3D 影像与离线运行的开源医疗多模态方案。</li>
-                <li class="summary-item">LangChain Agent Builder 正式发布，集成 MCP、记忆与人工审核，定义智能体编排新标准。</li>
-                <li class="summary-item">Kling 2.6 与 Veo 3.1 更新，视频生成聚焦高精度动作控制、4K 分辨率及 SynthID 版权保护。</li>
-                <li class="summary-item">行业热议“Vibe Coding”与沙箱机制，Bash + 文件系统被验证为智能体基础设施的最佳实践。</li>
+                <li class="summary-item">Anthropic 成立 Labs 部门并推出 Cowork，整合 Claude Code 与 Computer Use，打造终端原生 Agent 体验。</li>
+                <li class="summary-item">Google 发布 MedGemma 1.5 与 MedASR，提供支持 3D 影像与离线运行的开源医疗多模态栈。</li>
+                <li class="summary-item">LangChain Agent Builder 正式 GA，提供包含记忆、MCP 集成与人机协作的完整编排栈。</li>
+                <li class="summary-item">Kling 2.6 与 Veo 3.1 引领视频生成革新，前者在动作控制上表现优异，后者主打 4K 分辨率与一致性。</li>
+                <li class="summary-item">行业热议 Agent 基础设施收敛：沙箱化 Linux VM 与文件系统访问成为构建高性能 Agent 的通用范式。</li>
                 </ul>
             </section>
 
@@ -37,7 +37,7 @@
                 <div class="category-header">
                     <span class="category-icon">💼</span>
                     <h2 class="category-title">产品动态</h2>
-                    <span class="category-count">3</span>
+                    <span class="category-count">4</span>
                 </div>
                 <div class="news-grid">
 
@@ -46,7 +46,7 @@
                         <h3 class="news-title">Anthropic Labs 与 Cowork 发布</h3>
                         <a href="https://www.anthropic.com/news/introducing-anthropic-labs" class="item-link" target="_blank" rel="noopener">详情</a>
                     </div>
-                    <p class="news-summary">Mike Krieger 领导新部门，整合 Claude Code、Computer Use 及 Chrome 插件为统一智能体品牌 Cowork。</p>
+                    <p class="news-summary">Mike Krieger 卸任 CPO 并领导新 Labs 部门；Cowork 整合了 Claude Code、Computer Use 等功能，提供统一的 Agent UI。</p>
                     <div class="item-tags"><span class="tag">#Anthropic</span> <span class="tag">#Cowork</span> <span class="tag">#Mike Krieger</span></div>
                 </article>
 
@@ -55,17 +55,26 @@
                         <h3 class="news-title">LangSmith Agent Builder GA</h3>
                         <a href="https://twitter.com/LangChain/status/2011129282580660314" class="item-link" target="_blank" rel="noopener">详情</a>
                     </div>
-                    <p class="news-summary">LangChain 智能体构建器正式上线，提供无代码编排、记忆管理、MCP 集成及人工审核收件箱。</p>
+                    <p class="news-summary">LangChain 宣布 Agent Builder 正式上线，集成记忆、技能、MCP 工具及人工审批收件箱，定位为非玩具的生产级编排工具。</p>
                     <div class="item-tags"><span class="tag">#LangChain</span> <span class="tag">#Agent Builder</span> <span class="tag">#MCP</span></div>
                 </article>
 
                 <article class="news-card">
                     <div class="news-card-header">
-                        <h3 class="news-title">Veo 3.1 与 Kling 2.6 更新</h3>
+                        <h3 class="news-title">Google Veo 3.1 重大更新</h3>
                         <a href="https://twitter.com/GoogleDeepMind/status/2011121716336984151" class="item-link" target="_blank" rel="noopener">详情</a>
                     </div>
-                    <p class="news-summary">Google Veo 3.1 支持 4K/9:16 及 SynthID； Kling 2.6 展示高精度动作控制，但存在身份漂移问题。</p>
-                    <div class="item-tags"><span class="tag">#Google</span> <span class="tag">#Kling</span> <span class="tag">#Video Gen</span></div>
+                    <p class="news-summary">新增原生竖屏 9:16 支持、4K 分辨率、角色一致性增强及 SynthID 水印，优先面向移动端与生产级场景。</p>
+                    <div class="item-tags"><span class="tag">#Google</span> <span class="tag">#Veo</span> <span class="tag">#Video Gen</span></div>
+                </article>
+
+                <article class="news-card">
+                    <div class="news-card-header">
+                        <h3 class="news-title">Kling 2.6 Motion Control</h3>
+                        <a href="https://twitter.com/CuriousRefuge/status/2011207976095531524" class="item-link" target="_blank" rel="noopener">详情</a>
+                    </div>
+                    <p class="news-summary">凭借高精度的动作迁移和手指节奏控制获得好评，但在长视频中的面部一致性仍有漂移问题。</p>
+                    <div class="item-tags"><span class="tag">#Kling</span> <span class="tag">#Video</span> <span class="tag">#Motion Control</span></div>
                 </article>
 
                 </div>
@@ -81,20 +90,20 @@
 
                 <article class="news-card">
                     <div class="news-card-header">
-                        <h3 class="news-title">MedGemma 1.5 开源发布</h3>
-                        <a href="https://twitter.com/googleaidevs/status/2011181120793297361" class="item-link" target="_blank" rel="noopener">详情</a>
+                        <h3 class="news-title">Google MedGemma 1.5</h3>
+                        <a href="https://twitter.com/_philschmid/status/2011183904204390654" class="item-link" target="_blank" rel="noopener">详情</a>
                     </div>
-                    <p class="news-summary">Google 发布 4B 参数医疗模型，支持 3D 体积分析及离线运行，EHR 理解准确率达 89.6%。</p>
+                    <p class="news-summary">发布 4B 参数医疗多模态模型，支持 3D 容量（CT/MRI）、纵向对比及离线运行，EHR 理解准确率达 89.6%。</p>
                     <div class="item-tags"><span class="tag">#Google</span> <span class="tag">#MedGemma</span> <span class="tag">#Medical AI</span></div>
                 </article>
 
                 <article class="news-card">
                     <div class="news-card-header">
-                        <h3 class="news-title">GLM-Image 混合架构发布</h3>
+                        <h3 class="news-title">Zhipu AI GLM-Image</h3>
                         <a href="https://twitter.com/Zai_org/status/2011247591825068314" class="item-link" target="_blank" rel="noopener">详情</a>
                     </div>
-                    <p class="news-summary">智谱 AI 推出结合自回归与扩散的模型，专为海报/PPT 生成及多行文本渲染优化。</p>
-                    <div class="item-tags"><span class="tag">#Zhipu AI</span> <span class="tag">#GLM-Image</span> <span class="tag">#Diffusion</span></div>
+                    <p class="news-summary">采用混合自回归 + 扩散架构（9B AR + 7B Diffusion），专为海报/PPT 生成及多行文本渲染优化。</p>
+                    <div class="item-tags"><span class="tag">#Zhipu AI</span> <span class="tag">#GLM</span> <span class="tag">#Image Gen</span></div>
                 </article>
 
                 </div>
@@ -110,20 +119,20 @@
 
                 <article class="news-card">
                     <div class="news-card-header">
-                        <h3 class="news-title">MLX 性能与量化升级</h3>
-                        <a href="https://twitter.com/awnihannun/status/2011267993091875282" class="item-link" target="_blank" rel="noopener">详情</a>
+                        <h3 class="news-title">Cowork 开源复现版</h3>
+                        <a href="https://twitter.com/SIGKITTEN/status/2011077925085347909" class="item-link" target="_blank" rel="noopener">详情</a>
                     </div>
-                    <p class="news-summary">Apple MLX 框架新增 nvfp4/mxfp8 量化支持，M3 Ultra 运行 MiniMax M2.1 达 220 tok/s。</p>
-                    <div class="item-tags"><span class="tag">#Apple</span> <span class="tag">#MLX</span> <span class="tag">#On-device</span></div>
+                    <p class="news-summary">开发者使用 QEMU + bubblewrap + seccomp 构建了跨平台的 Cowork 类似环境，显示 Agent Shell 基础设施正在快速商品化。</p>
+                    <div class="item-tags"><span class="tag">#Open Source</span> <span class="tag">#Sandbox</span> <span class="tag">#Agent</span></div>
                 </article>
 
                 <article class="news-card">
                     <div class="news-card-header">
-                        <h3 class="news-title">Cowork 开源复现版</h3>
-                        <a href="https://twitter.com/SIGKITTEN/status/2011077925085347909" class="item-link" target="_blank" rel="noopener">详情</a>
+                        <h3 class="news-title">MLX 性能与量化更新</h3>
+                        <a href="https://twitter.com/awnihannun/status/2011267993091875282" class="item-link" target="_blank" rel="noopener">详情</a>
                     </div>
-                    <p class="news-summary">社区利用 QEMU + bubblewrap + seccomp 快速复现 Cowork 沙箱机制，智能体外壳模式趋于同质化。</p>
-                    <div class="item-tags"><span class="tag">#Open Source</span> <span class="tag">#Sandbox</span> <span class="tag">#VM</span></div>
+                    <p class="news-summary">MLX 新增量化支持（nvfp4/mxfp8），MiniMax M2.1 在 M3 Ultra 上实现 4-bit 220 tok/s 的本地推理吞吐量。</p>
+                    <div class="item-tags"><span class="tag">#Apple</span> <span class="tag">#MLX</span> <span class="tag">#On-device</span></div>
                 </article>
 
                 </div>
@@ -139,19 +148,19 @@
 
                 <article class="news-card">
                     <div class="news-card-header">
-                        <h3 class="news-title">MemRL 记忆检索机制</h3>
+                        <h3 class="news-title">MemRL: 记忆检索即强化学习</h3>
                         <a href="https://twitter.com/dair_ai/status/2011086096986443905" class="item-link" target="_blank" rel="noopener">详情</a>
                     </div>
-                    <p class="news-summary">提出将记忆检索视为强化学习问题，通过学习 Q 值优化经验回放，避免模型微调。</p>
+                    <p class="news-summary">提出将记忆检索视为 RL 问题，通过学习 Q 值来优化 episodic memories 的检索，无需微调基础模型即可提升性能。</p>
                     <div class="item-tags"><span class="tag">#MemRL</span> <span class="tag">#Memory</span> <span class="tag">#RL</span></div>
                 </article>
 
                 <article class="news-card">
                     <div class="news-card-header">
-                        <h3 class="news-title">递归语言模型 (RLMs)</h3>
-                        <a href="https://twitter.com/lateinteraction/status/2011250721681773013" class="item-link" target="_blank" rel="noopener">详情</a>
+                        <h3 class="news-title">递归语言模型</h3>
+                        <a href="https://twitter.com/TheTuringPost/status/2011272650132504889" class="item-link" target="_blank" rel="noopener">详情</a>
                     </div>
-                    <p class="news-summary">探索通过符号访问和 Python REPL 变量操作上下文，实现超越 10M tokens 的推理时架构。</p>
+                    <p class="news-summary">探讨通过符号访问和 Python REPL 变量操作上下文，实现超过 1000 万 tokens 的有效处理，而非单纯扩大窗口。</p>
                     <div class="item-tags"><span class="tag">#RLM</span> <span class="tag">#Long Context</span> <span class="tag">#Inference</span></div>
                 </article>
 
@@ -160,8 +169,37 @@
                         <h3 class="news-title">OctoCodingBench 基准测试</h3>
                         <a href="https://twitter.com/MiniMax_AI/status/2011266592303432058" class="item-link" target="_blank" rel="noopener">详情</a>
                     </div>
-                    <p class="news-summary">发布新基准以评估编码智能体对系统提示和仓库规范的遵循能力，防止“最大化”行为。</p>
-                    <div class="item-tags"><span class="tag">#Benchmark</span> <span class="tag">#Agent Eval</span> <span class="tag">#Coding</span></div>
+                    <p class="news-summary">MiniMax 发布新基准，专门评估编码 Agent 是否遵守系统提示、仓库规范和工具策略，防止“回形针最大化”行为。</p>
+                    <div class="item-tags"><span class="tag">#Benchmark</span> <span class="tag">#Agent</span> <span class="tag">#Evaluation</span></div>
+                </article>
+
+                </div>
+            </section>
+
+            <section class="category-section">
+                <div class="category-header">
+                    <span class="category-icon">🏆</span>
+                    <h2 class="category-title">行业事件</h2>
+                    <span class="category-count">2</span>
+                </div>
+                <div class="news-grid">
+
+                <article class="news-card">
+                    <div class="news-card-header">
+                        <h3 class="news-title">Anthropic 高层变动</h3>
+                        <a href="https://www.latent.space/p/agent-labs" class="item-link" target="_blank" rel="noopener">详情</a>
+                    </div>
+                    <p class="news-summary">Mike Krieger 卸任 CPO，转而领导 Anthropic Labs，前 Meta 同事 Ami Vora 接任 CPO 职位。</p>
+                    <div class="item-tags"><span class="tag">#Anthropic</span> <span class="tag">#Leadership</span> <span class="tag">#Mike Krieger</span></div>
+                </article>
+
+                <article class="news-card">
+                    <div class="news-card-header">
+                        <h3 class="news-title">Agent 术语定义之争</h3>
+                        <a href="https://twitter.com/GergelyOrosz/status/2011001698370699374" class="item-link" target="_blank" rel="noopener">详情</a>
+                    </div>
+                    <p class="news-summary">社区讨论重新定义“Vibe Coding”，区分了完全不读代码与基于验证的“Lucid Coding”，强调工程师在 Agent 辅助下的核心价值。</p>
+                    <div class="item-tags"><span class="tag">#Culture</span> <span class="tag">#Vibe Coding</span> <span class="tag">#Discussion</span></div>
                 </article>
 
                 </div>
@@ -169,7 +207,7 @@
 
 
         <footer class="keywords-footer">
-            <p>#关键词: Anthropic | Cowork | MedGemma | LangChain | Veo 3.1 | Kling | Agent | MCP | World Model | RLM</p>
+            <p>#关键词: Anthropic | Cowork | Claude Code | MedGemma | LangChain | Agent | Veo 3.1 | Kling | MCP | RLM</p>
         </footer>
 
         </main>
