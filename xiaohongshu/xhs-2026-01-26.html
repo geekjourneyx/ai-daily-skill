@@ -1,0 +1,380 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Daily - 小红书封面</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@300;400;500;700;900&family=JetBrains+Mono:wght@400;700&display=swap" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/html2canvas@1.4.1/dist/html2canvas.min.js"></script>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Noto Sans SC', sans-serif;
+            background: #1a1a1a;
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 20px;
+        }
+
+        .container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 20px;
+        }
+
+        /* 封面画布 - 3:4 比例 */
+        .cover-canvas {
+            width: 750px;
+            height: 1000px;
+            background: #000000;
+            position: relative;
+            overflow: hidden;
+        }
+
+        /* 网格背景线 */
+        .grid-lines {
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background-image:
+                linear-gradient(rgba(255,255,255,0.03) 1px, transparent 1px),
+                linear-gradient(90deg, rgba(255,255,255,0.03) 1px, transparent 1px);
+            background-size: 50px 50px;
+            pointer-events: none;
+        }
+
+        /* 装饰性几何元素 */
+        .geo-circle {
+            position: absolute;
+            border: 1px solid rgba(255,255,255,0.1);
+            border-radius: 50%;
+        }
+
+        .geo-circle-1 {
+            width: 300px;
+            height: 300px;
+            top: -100px;
+            right: -100px;
+        }
+
+        .geo-circle-2 {
+            width: 200px;
+            height: 200px;
+            bottom: 100px;
+            left: -50px;
+            border-color: rgba(0, 255, 136, 0.1);
+        }
+
+        .geo-square {
+            position: absolute;
+            border: 1px solid rgba(255,255,255,0.05);
+        }
+
+        .geo-square-1 {
+            width: 80px;
+            height: 80px;
+            top: 150px;
+            left: 30px;
+        }
+
+        /* 内容区域 */
+        .content {
+            position: relative;
+            z-index: 10;
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            padding: 50px 40px;
+        }
+
+        /* 顶部信息 */
+        .top-info {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 60px;
+        }
+
+        .brand {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+        }
+
+        .brand-dot {
+            width: 8px;
+            height: 8px;
+            background: #00ff88;
+        }
+
+        .brand-name {
+            font-size: 14px;
+            font-weight: 300;
+            color: rgba(255,255,255,0.6);
+            letter-spacing: 2px;
+        }
+
+        .date-badge {
+            font-family: 'JetBrains Mono', monospace;
+            font-size: 14px;
+            color: rgba(255,255,255,0.4);
+            font-weight: 400;
+        }
+
+        /* 主标题区域 */
+        .title-section {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+
+        .main-title {
+            font-size: 72px;
+            font-weight: 900;
+            color: #ffffff;
+            line-height: 1.1;
+            letter-spacing: -2px;
+            margin-bottom: 30px;
+            word-break: keep-all;
+        }
+
+        .main-title .highlight {
+            color: #00ff88;
+            text-shadow: 0 0 30px rgba(0, 255, 136, 0.5);
+        }
+
+        /* 分割线 */
+        .divider {
+            width: 60px;
+            height: 3px;
+            background: #00ff88;
+            margin: 30px 0;
+        }
+
+        /* 副标题 */
+        .subtitle {
+            font-size: 24px;
+            font-weight: 300;
+            color: rgba(255,255,255,0.7);
+            line-height: 1.5;
+            margin-bottom: 40px;
+            max-width: 80%;
+        }
+
+        /* 亮点标签区域 */
+        .highlights {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 12px;
+            margin-bottom: 40px;
+        }
+
+        .highlight-item {
+            font-size: 16px;
+            color: rgba(255,255,255,0.5);
+            padding: 8px 16px;
+            border: 1px solid rgba(255,255,255,0.1);
+            font-weight: 300;
+        }
+
+        /* 底部区域 */
+        .bottom-section {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-end;
+        }
+
+        .keywords {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+            max-width: 70%;
+        }
+
+        .keyword-tag {
+            font-size: 13px;
+            color: #00ff88;
+            font-weight: 400;
+        }
+
+        .account-info {
+            text-align: right;
+        }
+
+        .account-name {
+            font-size: 14px;
+            color: rgba(255,255,255,0.4);
+            font-weight: 300;
+            letter-spacing: 1px;
+        }
+
+        .account-slogan {
+            font-size: 12px;
+            color: #00ff88;
+            margin-top: 4px;
+            font-weight: 400;
+        }
+
+        /* 装饰性指示线 */
+        .indicator-line {
+            position: absolute;
+            bottom: 50px;
+            left: 40px;
+            width: 100px;
+            height: 1px;
+            background: linear-gradient(90deg, rgba(255,255,255,0.3), transparent);
+        }
+
+        .indicator-line::after {
+            content: '';
+            position: absolute;
+            right: 0;
+            top: -3px;
+            width: 7px;
+            height: 7px;
+            background: #00ff88;
+            border-radius: 50%;
+        }
+
+        /* 控制面板 */
+        .controls {
+            display: flex;
+            gap: 15px;
+            align-items: center;
+        }
+
+        .btn {
+            padding: 12px 30px;
+            background: rgba(255,255,255,0.1);
+            border: 1px solid rgba(255,255,255,0.2);
+            color: #fff;
+            font-size: 14px;
+            cursor: pointer;
+            transition: all 0.3s;
+            font-family: 'Noto Sans SC', sans-serif;
+            border-radius: 4px;
+        }
+
+        .btn:hover {
+            background: rgba(255,255,255,0.15);
+            border-color: rgba(255,255,255,0.3);
+        }
+
+        .btn-primary {
+            background: #00ff88;
+            color: #000;
+            border: none;
+            font-weight: 500;
+        }
+
+        .btn-primary:hover {
+            background: #00cc6a;
+        }
+
+        .status {
+            color: rgba(255,255,255,0.5);
+            font-size: 13px;
+            min-width: 150px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="cover-canvas" id="cover">
+            <!-- 网格背景 -->
+            <div class="grid-lines"></div>
+
+            <!-- 几何装饰 -->
+            <div class="geo-circle geo-circle-1"></div>
+            <div class="geo-circle geo-circle-2"></div>
+            <div class="geo-square geo-square-1"></div>
+
+            <!-- 内容 -->
+            <div class="content">
+                <!-- 顶部信息 -->
+                <div class="top-info">
+                    <div class="brand">
+                        <span class="brand-dot"></span>
+                        <span class="brand-name">极客杰尼</span>
+                    </div>
+                    <div class="date-badge">1.26</div>
+                </div>
+
+                <!-- 主标题区域 -->
+                <div class="title-section">
+                    <div class="main-title">OpenAI · Anthropic</div>
+                    <div class="divider"></div>
+                    <div class="subtitle">Anthropic 联合 OpenAI 等发布 M...</div>
+
+                    <!-- 亮点 -->
+                    <div class="highlights">
+                        <span class="highlight-item">Anthro</span><span class="highlight-item">NVIDIA</span><span class="highlight-item">阿里发布 Q</span>
+                    </div>
+                </div>
+
+                <!-- 底部区域 -->
+                <div class="bottom-section">
+                    <div class="keywords">
+                        <span class="keyword-tag">#MCP Apps</span><span class="keyword-tag">#Anthropic</span><span class="keyword-tag">#NVIDIA</span><span class="keyword-tag">#Qwen3</span><span class="keyword-tag">#RLM</span>
+                    </div>
+                    <div class="account-info">
+                        <div class="account-name">极客杰尼</div>
+                        <div class="account-slogan">AI实战派</div>
+                    </div>
+                </div>
+
+                <!-- 指示线 -->
+                <div class="indicator-line"></div>
+            </div>
+        </div>
+
+        <!-- 控制面板 -->
+        <div class="controls">
+            <button class="btn btn-primary" onclick="saveImage()">保存封面</button>
+            <div class="status" id="status">点击保存按钮下载封面</div>
+        </div>
+    </div>
+
+    <script>
+        async function saveImage() {
+            const cover = document.getElementById('cover');
+            const status = document.getElementById('status');
+
+            status.textContent = '生成中...';
+
+            try {
+                const canvas = await html2canvas(cover, {
+                    scale: 2,
+                    useCORS: true,
+                    backgroundColor: '#000000',
+                    logging: false
+                });
+
+                const link = document.createElement('a');
+                link.download = 'ai-daily-xhs-1.26.png';
+                link.href = canvas.toDataURL('image/png');
+                link.click();
+
+                status.textContent = '✓ 封面已保存';
+            } catch (error) {
+                console.error(error);
+                status.textContent = '保存失败，请重试';
+            }
+        }
+    </script>
+</body>
+</html>
