@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Daily · 2026年2月21日 星期六</title>
+    <meta name="description" content="每日 AI 前沿资讯，智能分类，快速掌握核心动态">
+    <meta name="keywords" content="Gemini 3.1 Pro, Claude Opus 4.6, llama.cpp, Hugging Face, SWE-bench, GEPA, Taalas, Agent, RLM, METR, AI, 人工智能, 机器学习, 深度学习, 资讯, 日报">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body data-theme="blue">
+    <div class="background-glow"></div>
+    <div class="geometric-lines"></div>
+
+    <div class="container">
+        <header class="header">
+            <div class="logo-icon">🤖</div>
+            <h1>AI Daily</h1>
+            <div class="date-badge">2026年2月21日 星期六</div>
+        </header>
+
+        <main class="main-content">
+
+            <section class="summary-card">
+                <h2 class="section-title">📌 今日核心摘要</h2>
+                <ul class="summary-list">
+                <li class="summary-item">Gemini 3.1 Pro 展示极强检索与性价比，但工程落地体验遭工程师吐槽。</li>
+                <li class="summary-item">Claude Opus 4.6 获 METR 长任务评估高分，但推理时常遇 Token 耗尽问题。</li>
+                <li class="summary-item">llama.cpp 团队加入 Hugging Face，推动本地 AI 生态整合与标准化。</li>
+                <li class="summary-item">GEPA/gskill 框架兴起，将 Agent 技能优化转化为自动化流水线。</li>
+                <li class="summary-item">Taalas 宣布定制芯片实现 Llama 3 8B 每秒 1.6 万 Token 极速推理。</li>
+                </ul>
+            </section>
+
+
+            <section class="category-section">
+                <div class="category-header">
+                    <span class="category-icon">🤖</span>
+                    <h2 class="category-title">模型发布</h2>
+                    <span class="category-count">3</span>
+                </div>
+                <div class="news-grid">
+
+                <article class="news-card">
+                    <div class="news-card-header">
+                        <h3 class="news-title">Gemini 3.1 Pro 性能评估</h3>
+                        <a href="https://x.com/DillonUzar/status/2024655613293215855" class="item-link" target="_blank" rel="noopener">详情</a>
+                    </div>
+                    <p class="news-summary">在 Context Arena 中接近 GPT-5.2，多针检索表现优异，且成本仅为竞品三分之一。</p>
+                    <div class="item-tags"><span class="tag">#Google</span> <span class="tag">#Gemini</span> <span class="tag">#Benchmark</span></div>
+                </article>
+
+                <article class="news-card">
+                    <div class="news-card-header">
+                        <h3 class="news-title">Claude Opus 4.6 长程能力</h3>
+                        <a href="https://x.com/METR_Evals/status/2024923422867030027" class="item-link" target="_blank" rel="noopener">详情</a>
+                    </div>
+                    <p class="news-summary">METR 评估显示其 50% 任务时间跨度达 14.5 小时，但数据噪声较大。</p>
+                    <div class="item-tags"><span class="tag">#Anthropic</span> <span class="tag">#Claude</span> <span class="tag">#METR</span></div>
+                </article>
+
+                <article class="news-card">
+                    <div class="news-card-header">
+                        <h3 class="news-title">SWE-bench 评估方法论修正</h3>
+                        <a href="https://x.com/EpochAIResearch/status/2024924403142910137" class="item-link" target="_blank" rel="noopener">详情</a>
+                    </div>
+                    <p class="news-summary">Epoch AI 更新 SWE-bench Verified 方法论，修正了此前跨实验室对比的偏差。</p>
+                    <div class="item-tags"><span class="tag">#SWE-bench</span> <span class="tag">#Evaluation</span> <span class="tag">#MiniMax</span></div>
+                </article>
+
+                </div>
+            </section>
+
+            <section class="category-section">
+                <div class="category-header">
+                    <span class="category-icon">💼</span>
+                    <h2 class="category-title">产品动态</h2>
+                    <span class="category-count">3</span>
+                </div>
+                <div class="news-grid">
+
+                <article class="news-card">
+                    <div class="news-card-header">
+                        <h3 class="news-title">Claude Code 遭遇体验回退</h3>
+                        <a href="https://x.com/theo/status/2024718133676867608" class="item-link" target="_blank" rel="noopener">详情</a>
+                    </div>
+                    <p class="news-summary">用户报告新版存在 UI 缺失、卡顿及推理中断问题，引发社区强烈不满。</p>
+                    <div class="item-tags"><span class="tag">#Anthropic</span> <span class="tag">#Claude Code</span> <span class="tag">#UX</span></div>
+                </article>
+
+                <article class="news-card">
+                    <div class="news-card-header">
+                        <h3 class="news-title">Claude Code Security 发布</h3>
+                        <a href="https://x.com/claudeai/status/2024907535145468326" class="item-link" target="_blank" rel="noopener">详情</a>
+                    </div>
+                    <p class="news-summary">Anthropic 推出安全扫描代理预览版，声称已在开源项目中发现 500+ 漏洞。</p>
+                    <div class="item-tags"><span class="tag">#Anthropic</span> <span class="tag">#Security</span> <span class="tag">#Agent</span></div>
+                </article>
+
+                <article class="news-card">
+                    <div class="news-card-header">
+                        <h3 class="news-title">Ollama 0.16.3 更新</h3>
+                        <a href="https://x.com/ollama/status/2024978932127187375" class="item-link" target="_blank" rel="noopener">详情</a>
+                    </div>
+                    <p class="news-summary">新增 Cline 和 Pi 集成，通过 ollama launch 进一步简化本地模型工作流。</p>
+                    <div class="item-tags"><span class="tag">#Ollama</span> <span class="tag">#Local AI</span> <span class="tag">#Tools</span></div>
+                </article>
+
+                </div>
+            </section>
+
+            <section class="category-section">
+                <div class="category-header">
+                    <span class="category-icon">🛠️</span>
+                    <h2 class="category-title">工具框架</h2>
+                    <span class="category-count">4</span>
+                </div>
+                <div class="news-grid">
+
+                <article class="news-card">
+                    <div class="news-card-header">
+                        <h3 class="news-title">llama.cpp 加入 Hugging Face</h3>
+                        <a href="https://x.com/ggerganov/status/2024839991482777976" class="item-link" target="_blank" rel="noopener">详情</a>
+                    </div>
+                    <p class="news-summary">Georgi Gerganov 宣布 ggml.ai 并入 HF，旨在让本地 AI 变得更加简单高效。</p>
+                    <div class="item-tags"><span class="tag">#Hugging Face</span> <span class="tag">#llama.cpp</span> <span class="tag">#Open Source</span></div>
+                </article>
+
+                <article class="news-card">
+                    <div class="news-card-header">
+                        <h3 class="news-title">GEPA/gskill 技能优化流水线</h3>
+                        <a href="https://x.com/ShangyinT/status/2024651061995458722" class="item-link" target="_blank" rel="noopener">详情</a>
+                    </div>
+                    <p class="news-summary">推出自动化 Agent 技能学习管道，显著提升代码仓库任务解决速度与准确率。</p>
+                    <div class="item-tags"><span class="tag">#GEPA</span> <span class="tag">#Agent</span> <span class="tag">#DSPy</span></div>
+                </article>
+
+                <article class="news-card">
+                    <div class="news-card-header">
+                        <h3 class="news-title">RLMs 递归语言模型</h3>
+                        <a href="https://x.com/HammadTime/status/2024694115372499026" class="item-link" target="_blank" rel="noopener">详情</a>
+                    </div>
+                    <p class="news-summary">作为一种新兴的元编排框架，RLM 被认为可通用地模拟多种 Agent 工作流。</p>
+                    <div class="item-tags"><span class="tag">#RLM</span> <span class="tag">#Orchestration</span> <span class="tag">#Framework</span></div>
+                </article>
+
+                <article class="news-card">
+                    <div class="news-card-header">
+                        <h3 class="news-title">Hodoscope 轨迹审计工具</h3>
+                        <a href="https://x.com/AdtRaghunathan/status/2024944182595289418" class="item-link" target="_blank" rel="noopener">详情</a>
+                    </div>
+                    <p class="news-summary">引入可视化工具用于大规模审计 Agent 轨迹，可快速发现基准测试漏洞。</p>
+                    <div class="item-tags"><span class="tag">#Safety</span> <span class="tag">#Auditing</span> <span class="tag">#Visualization</span></div>
+                </article>
+
+                </div>
+            </section>
+
+            <section class="category-section">
+                <div class="category-header">
+                    <span class="category-icon">📚</span>
+                    <h2 class="category-title">研究论文</h2>
+                    <span class="category-count">3</span>
+                </div>
+                <div class="news-grid">
+
+                <article class="news-card">
+                    <div class="news-card-header">
+                        <h3 class="news-title">Agent 编排拓扑优化</h3>
+                        <a href="https://x.com/omarsar0/status/2024847274157945035" class="item-link" target="_blank" rel="noopener">详情</a>
+                    </div>
+                    <p class="news-summary">研究表明在模型性能趋同的背景下，多智能体编排拓扑可带来 12-23% 的收益。</p>
+                    <div class="item-tags"><span class="tag">#Multi-agent</span> <span class="tag">#Research</span> <span class="tag">#System</span></div>
+                </article>
+
+                <article class="news-card">
+                    <div class="news-card-header">
+                        <h3 class="news-title">Taalas 定制硅芯推理</h3>
+                        <a href="https://x.com/awnihannun/status/2024671348782711153" class="item-link" target="_blank" rel="noopener">详情</a>
+                    </div>
+                    <p class="news-summary">演示通过专用硅片实现 Llama 3 8B 每秒 1.6 万 Token 的极速吞吐。</p>
+                    <div class="item-tags"><span class="tag">#Hardware</span> <span class="tag">#Inference</span> <span class="tag">#Taalas</span></div>
+                </article>
+
+                <article class="news-card">
+                    <div class="news-card-header">
+                        <h3 class="news-title">SpargeAttention 2.0</h3>
+                        <a href="https://x.com/HuggingPapers/status/2024760112293040531" class="item-link" target="_blank" rel="noopener">详情</a>
+                    </div>
+                    <p class="news-summary">通过 95% 注意力稀疏化与混合掩码，实现视频扩散 16.2 倍加速。</p>
+                    <div class="item-tags"><span class="tag">#Optimization</span> <span class="tag">#Video</span> <span class="tag">#Diffusion</span></div>
+                </article>
+
+                </div>
+            </section>
+
+            <section class="category-section">
+                <div class="category-header">
+                    <span class="category-icon">🏆</span>
+                    <h2 class="category-title">行业事件</h2>
+                    <span class="category-count">2</span>
+                </div>
+                <div class="news-grid">
+
+                <article class="news-card">
+                    <div class="news-card-header">
+                        <h3 class="news-title">FBI 逮捕涉窃密工程师</h3>
+                        <a href="https://x.com/FBISanFrancisco/status/2024670479974363376" class="item-link" target="_blank" rel="noopener">详情</a>
+                    </div>
+                    <p class="news-summary">3 名工程师因涉嫌窃取谷歌等公司处理器安全/加密相关商业机密被捕。</p>
+                    <div class="item-tags"><span class="tag">#FBI</span> <span class="tag">#Legal</span> <span class="tag">#Google</span></div>
+                </article>
+
+                <article class="news-card">
+                    <div class="news-card-header">
+                        <h3 class="news-title">Benchmark 测量争议</h3>
+                        <a href="https://x.com/paul_cal/status/2024748708223402120" class="item-link" target="_blank" rel="noopener">详情</a>
+                    </div>
+                    <p class="news-summary">社区热议模型在 ARC-AGI 表现优异却在 Connect 4 失败，质疑基准测量的有效性。</p>
+                    <div class="item-tags"><span class="tag">#Benchmark</span> <span class="tag">#Community</span> <span class="tag">#ARC-AGI</span></div>
+                </article>
+
+                </div>
+            </section>
+
+
+        <footer class="keywords-footer">
+            <p>#关键词: Gemini 3.1 Pro | Claude Opus 4.6 | llama.cpp | Hugging Face | SWE-bench | GEPA | Taalas | Agent | RLM | METR</p>
+        </footer>
+
+        </main>
+
+        <footer class="footer">
+            <p>© 2026 AI Daily · 由 Claude AI 智能生成</p>
+        </footer>
+    </div>
+</body>
+</html>
