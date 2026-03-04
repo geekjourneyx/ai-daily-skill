@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Daily · 2026年3月2日 星期一</title>
+    <meta name="description" content="每日 AI 前沿资讯，智能分类，快速掌握核心动态">
+    <meta name="keywords" content="Qwen 3.5, OpenAI, DoD, Apple Neural Engine, Codex 5.3, Claude, Docker, CUDA Agent, BullshitBench, Agents, AI, 人工智能, 机器学习, 深度学习, 资讯, 日报">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body data-theme="blue">
+    <div class="background-glow"></div>
+    <div class="geometric-lines"></div>
+
+    <div class="container">
+        <header class="header">
+            <div class="logo-icon">🤖</div>
+            <h1>AI Daily</h1>
+            <div class="date-badge">2026年3月2日 星期一</div>
+        </header>
+
+        <main class="main-content">
+
+            <section class="summary-card">
+                <h2 class="section-title">📌 今日核心摘要</h2>
+                <ul class="summary-list">
+                <li class="summary-item">阿里发布 Qwen 3.5 小参数模型，支持端侧多模态与长上下文，采用混合注意力架构。</li>
+                <li class="summary-item">OpenAI 与美国国防部合作引发争议，Sam Altman 公布修正案禁止国内监控。</li>
+                <li class="summary-item">AI 基础设施成为焦点，Apple 神经网络引擎逆向工程突破，Docker 支持本地模型服务。</li>
+                <li class="summary-item">代码代理可靠性受关注，Codex 5.3 表现亮眼，Claude 代码生成占比高但稳定性存疑。</li>
+                <li class="summary-item">ByteDance 推出 CUDA Agent，利用强化学习优化 CUDA 内核，性能超越 torch.compile。</li>
+                </ul>
+            </section>
+
+
+            <section class="category-section">
+                <div class="category-header">
+                    <span class="category-icon">🤖</span>
+                    <h2 class="category-title">模型发布</h2>
+                    <span class="category-count">2</span>
+                </div>
+                <div class="news-grid">
+
+                <article class="news-card">
+                    <div class="news-card-header">
+                        <h3 class="news-title">Qwen 3.5 小参数系列发布</h3>
+                        <a href="https://x.com/Alibaba_Qwen/status/2028460046510965160" class="item-link" target="_blank" rel="noopener">详情</a>
+                    </div>
+                    <p class="news-summary">阿里推出 0.8B-9B 模型，主打端侧部署、原生多模态及 262K 长上下文，采用混合注意力架构。</p>
+                    <div class="item-tags"><span class="tag">#Alibaba</span> <span class="tag">#Qwen</span> <span class="tag">#Edge AI</span> <span class="tag">#Multimodal</span></div>
+                </article>
+
+                <article class="news-card">
+                    <div class="news-card-header">
+                        <h3 class="news-title">Codex 5.3 代码能力提升</h3>
+                        <a href="https://x.com/theo/status/2028389340469149704" class="item-link" target="_blank" rel="noopener">详情</a>
+                    </div>
+                    <p class="news-summary">传闻显示 Codex 5.3 在 WeirdML 基准测试中表现优异，代码生成能力持续逼近饱和。</p>
+                    <div class="item-tags"><span class="tag">#OpenAI</span> <span class="tag">#Codex</span> <span class="tag">#Coding</span></div>
+                </article>
+
+                </div>
+            </section>
+
+            <section class="category-section">
+                <div class="category-header">
+                    <span class="category-icon">🛠️</span>
+                    <h2 class="category-title">工具框架</h2>
+                    <span class="category-count">4</span>
+                </div>
+                <div class="news-grid">
+
+                <article class="news-card">
+                    <div class="news-card-header">
+                        <h3 class="news-title">Docker 支持 MLX 本地服务</h3>
+                        <a href="https://x.com/Docker/status/2028470592899354929" class="item-link" target="_blank" rel="noopener">详情</a>
+                    </div>
+                    <p class="news-summary">Docker Desktop 新增 Model Runner 功能，支持在 Apple Silicon 上运行 MLX 模型并提供 OpenAI 兼容 API。</p>
+                    <div class="item-tags"><span class="tag">#Docker</span> <span class="tag">#Apple</span> <span class="tag">#MLX</span> <span class="tag">#Local LLM</span></div>
+                </article>
+
+                <article class="news-card">
+                    <div class="news-card-header">
+                        <h3 class="news-title">llama.cpp 官方包管理</h3>
+                        <a href="https://x.com/ggerganov/status/2028505638452531340" class="item-link" target="_blank" rel="noopener">详情</a>
+                    </div>
+                    <p class="news-summary">llama.cpp 计划提供官方 Debian/Ubuntu 包，降低本地推理工具的使用门槛。</p>
+                    <div class="item-tags"><span class="tag">#llama.cpp</span> <span class="tag">#Open Source</span> <span class="tag">#Packaging</span></div>
+                </article>
+
+                <article class="news-card">
+                    <div class="news-card-header">
+                        <h3 class="news-title">GitNexus 浏览器内代码图谱</h3>
+                        <a href="https://x.com/MillieMarconnni/status/2028436636841996451" class="item-link" target="_blank" rel="noopener">详情</a>
+                    </div>
+                    <p class="news-summary">基于 KuzuDB 和 D3 的工具，可在浏览器中构建代码仓库知识图谱并执行 Cypher 查询。</p>
+                    <div class="item-tags"><span class="tag">#GraphRAG</span> <span class="tag">#DevTool</span> <span class="tag">#Browser</span></div>
+                </article>
+
+                <article class="news-card">
+                    <div class="news-card-header">
+                        <h3 class="news-title">Stripe 推出 LLM 计费代理</h3>
+                        <a href="https://x.com/miles_matthias/status/2028515021022548181" class="item-link" target="_blank" rel="noopener">详情</a>
+                    </div>
+                    <p class="news-summary">Stripe 发布 LLM 代理服务，支持按 Token 计费和自动路由，集成标准 SaaS 财务流程。</p>
+                    <div class="item-tags"><span class="tag">#Stripe</span> <span class="tag">#Billing</span> <span class="tag">#API</span></div>
+                </article>
+
+                </div>
+            </section>
+
+            <section class="category-section">
+                <div class="category-header">
+                    <span class="category-icon">📚</span>
+                    <h2 class="category-title">研究论文</h2>
+                    <span class="category-count">3</span>
+                </div>
+                <div class="news-grid">
+
+                <article class="news-card">
+                    <div class="news-card-header">
+                        <h3 class="news-title">CUDA Agent 强化学习优化内核</h3>
+                        <a href="https://x.com/HuggingPapers/status/2028504440978739428" class="item-link" target="_blank" rel="noopener">详情</a>
+                    </div>
+                    <p class="news-summary">ByteDance 提出基于 RL 的 CUDA 内核优化方法，在 KernelBench 上达到 SOTA。</p>
+                    <div class="item-tags"><span class="tag">#ByteDance</span> <span class="tag">#CUDA</span> <span class="tag">#RL</span> <span class="tag">#Systems</span></div>
+                </article>
+
+                <article class="news-card">
+                    <div class="news-card-header">
+                        <h3 class="news-title">Apple Neural Engine 逆向工程</h3>
+                        <a href="https://x.com/AmbsdOP/status/2028457255968874940" class="item-link" target="_blank" rel="noopener">详情</a>
+                    </div>
+                    <p class="news-summary">研究者利用未公开 API 在 ANE 上实现 Transformer 训练循环，有望解锁端侧微调。</p>
+                    <div class="item-tags"><span class="tag">#Apple</span> <span class="tag">#ANE</span> <span class="tag">#Reverse Engineering</span></div>
+                </article>
+
+                <article class="news-card">
+                    <div class="news-card-header">
+                        <h3 class="news-title">BullshitBench v2 基准发布</h3>
+                        <a href="https://x.com/petergostev/status/2028492834693677377" class="item-link" target="_blank" rel="noopener">详情</a>
+                    </div>
+                    <p class="news-summary">新增 100 道题目，测试显示推理能力有时反而会降低模型在检测胡扯任务上的表现。</p>
+                    <div class="item-tags"><span class="tag">#Benchmark</span> <span class="tag">#Evaluation</span> <span class="tag">#Hallucination</span></div>
+                </article>
+
+                </div>
+            </section>
+
+            <section class="category-section">
+                <div class="category-header">
+                    <span class="category-icon">🏆</span>
+                    <h2 class="category-title">行业事件</h2>
+                    <span class="category-count">2</span>
+                </div>
+                <div class="news-grid">
+
+                <article class="news-card">
+                    <div class="news-card-header">
+                        <h3 class="news-title">OpenAI 与国防部合作争议</h3>
+                        <a href="https://x.com/sama/status/2028640354912923739" class="item-link" target="_blank" rel="noopener">详情</a>
+                    </div>
+                    <p class="news-summary">Sam Altman 公布合同修正案，明确禁止利用 OpenAI 技术进行故意国内监控，但法律漏洞仍存疑。</p>
+                    <div class="item-tags"><span class="tag">#OpenAI</span> <span class="tag">#Policy</span> <span class="tag">#Privacy</span> <span class="tag">#DoD</span></div>
+                </article>
+
+                <article class="news-card">
+                    <div class="news-card-header">
+                        <h3 class="news-title">AI 可用性成为新痛点</h3>
+                        <a href="https://x.com/ThePrimeagen/status/2028477482865774984" class="item-link" target="_blank" rel="noopener">详情</a>
+                    </div>
+                    <p class="news-summary">社区讨论从模型质量转向服务可用性，Claude 频繁宕机影响开发者生产力。</p>
+                    <div class="item-tags"><span class="tag">#Anthropic</span> <span class="tag">#Reliability</span> <span class="tag">#Ops</span></div>
+                </article>
+
+                </div>
+            </section>
+
+
+        <footer class="keywords-footer">
+            <p>#关键词: Qwen 3.5 | OpenAI | DoD | Apple Neural Engine | Codex 5.3 | Claude | Docker | CUDA Agent | BullshitBench | Agents</p>
+        </footer>
+
+        </main>
+
+        <footer class="footer">
+            <p>© 2026 AI Daily · 由 Claude AI 智能生成</p>
+        </footer>
+    </div>
+</body>
+</html>
