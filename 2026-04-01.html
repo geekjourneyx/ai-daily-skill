@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Daily · 2026年4月1日 星期三</title>
+    <meta name="description" content="每日 AI 前沿资讯，智能分类，快速掌握核心动态">
+    <meta name="keywords" content="Arcee, Trinity-Large-Thinking, Claude Code, Anthropic, GLM-5V-Turbo, Agent, TRL, Falcon Perception, OpenRouter, MemFactory, AI, 人工智能, 机器学习, 深度学习, 资讯, 日报">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body data-theme="blue">
+    <div class="background-glow"></div>
+    <div class="geometric-lines"></div>
+
+    <div class="container">
+        <header class="header">
+            <div class="logo-icon">🤖</div>
+            <h1>AI Daily</h1>
+            <div class="date-badge">2026年4月1日 星期三</div>
+        </header>
+
+        <main class="main-content">
+
+            <section class="summary-card">
+                <h2 class="section-title">📌 今日核心摘要</h2>
+                <ul class="summary-list">
+                <li class="summary-item">Arcee 发布 Trinity-Large-Thinking，400B 总参数/13B 激活参数的 Apache 2.0 开源模型，推理性能对标 Opus 4.6。</li>
+                <li class="summary-item">Anthropic 意外泄露 Claude Code 源码，揭示其核心架构为简单的 while 循环及复杂的上下文压缩栈。</li>
+                <li class="summary-item">Z.ai 推出 GLM-5V-Turbo，原生多模态融合视觉编码模型，支持图像、视频及文档布局处理。</li>
+                <li class="summary-item">Agent 系统研究聚焦记忆基础设施与安全，DeepMind 论文揭示网页内容对 Agent 的严重安全威胁。</li>
+                <li class="summary-item">Hugging Face 发布 TRL v1.0，统一 SFT、DPO 与 GRPO，标志着开源后训练栈走向成熟。</li>
+                </ul>
+            </section>
+
+
+            <section class="category-section">
+                <div class="category-header">
+                    <span class="category-icon">🤖</span>
+                    <h2 class="category-title">模型发布</h2>
+                    <span class="category-count">4</span>
+                </div>
+                <div class="news-grid">
+
+                <article class="news-card">
+                    <div class="news-card-header">
+                        <h3 class="news-title">Arcee Trinity-Large-Thinking</h3>
+                        <a href="https://x.com/arcee_ai/status/2039369121591120030" class="item-link" target="_blank" rel="noopener">详情</a>
+                    </div>
+                    <p class="news-summary">发布 400B 总参数/13B 激活参数的开源推理模型，Apache 2.0 协议，PinchBench 排名第二。</p>
+                    <div class="item-tags"><span class="tag">#Arcee</span> <span class="tag">#Open Weights</span> <span class="tag">#Reasoning</span></div>
+                </article>
+
+                <article class="news-card">
+                    <div class="news-card-header">
+                        <h3 class="news-title">Z.ai GLM-5V-Turbo</h3>
+                        <a href="https://x.com/Zai_org/status/2039371126984360085" class="item-link" target="_blank" rel="noopener">详情</a>
+                    </div>
+                    <p class="news-summary">原生多模态视觉编码模型，支持图像视频与文档布局，采用 CogViT 编码器与协作 RL。</p>
+                    <div class="item-tags"><span class="tag">#Z.ai</span> <span class="tag">#Vision</span> <span class="tag">#Coding</span></div>
+                </article>
+
+                <article class="news-card">
+                    <div class="news-card-header">
+                        <h3 class="news-title">Falcon Perception & OCR</h3>
+                        <a href="https://x.com/dahou_yasser/status/2039242378809385331" class="item-link" target="_blank" rel="noopener">详情</a>
+                    </div>
+                    <p class="news-summary">TII 发布开放词汇指代表达分割模型及 0.3B 参数 OCR 模型，采用早期融合 Transformer。</p>
+                    <div class="item-tags"><span class="tag">#TII</span> <span class="tag">#Falcon</span> <span class="tag">#OCR</span></div>
+                </article>
+
+                <article class="news-card">
+                    <div class="news-card-header">
+                        <h3 class="news-title">Holo3 与 Qwen3.5 Distill</h3>
+                        <a href="https://x.com/mervenoyann/status/2039327292665561577" class="item-link" target="_blank" rel="noopener">详情</a>
+                    </div>
+                    <p class="news-summary">H Company 发布 GUI 导航模型 Holo3；Qwen3.5 27B 蒸馏版在 SWE-bench 上超越 Claude Sonnet 4.5。</p>
+                    <div class="item-tags"><span class="tag">#H Company</span> <span class="tag">#Qwen</span> <span class="tag">#Distillation</span></div>
+                </article>
+
+                </div>
+            </section>
+
+            <section class="category-section">
+                <div class="category-header">
+                    <span class="category-icon">🏆</span>
+                    <h2 class="category-title">行业事件</h2>
+                    <span class="category-count">3</span>
+                </div>
+                <div class="news-grid">
+
+                <article class="news-card">
+                    <div class="news-card-header">
+                        <h3 class="news-title">Claude Code 源码泄露</h3>
+                        <a href="https://x.com/ZhihuFrontier/status/2039229986339688581" class="item-link" target="_blank" rel="noopener">详情</a>
+                    </div>
+                    <p class="news-summary">Anthropic 意外暴露代码，显示其采用极简 while 循环核心与 4 层上下文压缩栈，引发社区热议。</p>
+                    <div class="item-tags"><span class="tag">#Anthropic</span> <span class="tag">#Leak</span> <span class="tag">#Architecture</span></div>
+                </article>
+
+                <article class="news-card">
+                    <div class="news-card-header">
+                        <h3 class="news-title">Anthropic DMCA 争议</h3>
+                        <a href="https://x.com/theo/status/2039411851919057339" class="item-link" target="_blank" rel="noopener">详情</a>
+                    </div>
+                    <p class="news-summary">Anthropic 针对非泄露代码仓库发出错误 DMCA 删除通知，后迅速撤回并恢复仓库。</p>
+                    <div class="item-tags"><span class="tag">#Anthropic</span> <span class="tag">#DMCA</span> <span class="tag">#Legal</span></div>
+                </article>
+
+                <article class="news-card">
+                    <div class="news-card-header">
+                        <h3 class="news-title">开源替代方案崛起</h3>
+                        <a href="https://x.com/NousResearch/status/2039402523711140094" class="item-link" target="_blank" rel="noopener">详情</a>
+                    </div>
+                    <p class="news-summary">受泄露事件影响，Nous Hermes Agent 等开源替代方案关注度激增，强调易部署与本地工作流。</p>
+                    <div class="item-tags"><span class="tag">#Open Source</span> <span class="tag">#Agents</span> <span class="tag">#NousResearch</span></div>
+                </article>
+
+                </div>
+            </section>
+
+            <section class="category-section">
+                <div class="category-header">
+                    <span class="category-icon">📚</span>
+                    <h2 class="category-title">研究论文</h2>
+                    <span class="category-count">3</span>
+                </div>
+                <div class="news-grid">
+
+                <article class="news-card">
+                    <div class="news-card-header">
+                        <h3 class="news-title">Agent 安全与记忆研究</h3>
+                        <a href="https://x.com/omarsar0/status/2039383554510217707" class="item-link" target="_blank" rel="noopener">详情</a>
+                    </div>
+                    <p class="news-summary">DeepMind 论文指出网页内容是 Agent 的主要攻击面；MemFactory 提出统一记忆增强框架。</p>
+                    <div class="item-tags"><span class="tag">#DeepMind</span> <span class="tag">#Security</span> <span class="tag">#Memory</span></div>
+                </article>
+
+                <article class="news-card">
+                    <div class="news-card-header">
+                        <h3 class="news-title">多智能体协调研究</h3>
+                        <a href="https://x.com/dair_ai/status/2039350842382512455" class="item-link" target="_blank" rel="noopener">详情</a>
+                    </div>
+                    <p class="news-summary">新研究显示自组织角色在特定任务上优于预定义层级，但理论上仍受限于贝叶斯决策者。</p>
+                    <div class="item-tags"><span class="tag">#Multi-Agent</span> <span class="tag">#Coordination</span> <span class="tag">#Research</span></div>
+                </article>
+
+                <article class="news-card">
+                    <div class="news-card-header">
+                        <h3 class="news-title">长程评估基准</h3>
+                        <a href="https://x.com/DrJimFan/status/2039358115318243352" class="item-link" target="_blank" rel="noopener">详情</a>
+                    </div>
+                    <p class="news-summary">Kaggle 标准化 Agent 考试、YC-Bench 及 CaP-Gym 等新基准发布，覆盖长周期任务与机器人操作。</p>
+                    <div class="item-tags"><span class="tag">#Benchmark</span> <span class="tag">#Robotics</span> <span class="tag">#Evaluation</span></div>
+                </article>
+
+                </div>
+            </section>
+
+            <section class="category-section">
+                <div class="category-header">
+                    <span class="category-icon">🛠️</span>
+                    <h2 class="category-title">工具框架</h2>
+                    <span class="category-count">3</span>
+                </div>
+                <div class="news-grid">
+
+                <article class="news-card">
+                    <div class="news-card-header">
+                        <h3 class="news-title">Hugging Face TRL v1.0</h3>
+                        <a href="https://x.com/RussellQuantum/status/2039270550099443954" class="item-link" target="_blank" rel="noopener">详情</a>
+                    </div>
+                    <p class="news-summary">发布统一的后训练库，整合 SFT、Reward Modeling、DPO 和 GRPO，提升生产可用性。</p>
+                    <div class="item-tags"><span class="tag">#Hugging Face</span> <span class="tag">#TRL</span> <span class="tag">#RLHF</span></div>
+                </article>
+
+                <article class="news-card">
+                    <div class="news-card-header">
+                        <h3 class="news-title">HeavyBall 3.0.0</h3>
+                        <a href="https://x.com/Clashluke/status/2039374459375677814" class="item-link" target="_blank" rel="noopener">详情</a>
+                    </div>
+                    <p class="news-summary">更新支持 FSDP、DDP 及端到端编译，带来 2.5 倍加速，优化器性能提升。</p>
+                    <div class="item-tags"><span class="tag">#HeavyBall</span> <span class="tag">#Optimization</span> <span class="tag">#Infra</span></div>
+                </article>
+
+                <article class="news-card">
+                    <div class="news-card-header">
+                        <h3 class="news-title">检索与效率工具</h3>
+                        <a href="https://x.com/arena/status/2039377186432618885" class="item-link" target="_blank" rel="noopener">详情</a>
+                    </div>
+                    <p class="news-summary">Arena 发布帕累托前沿图表；Late Interaction 检索被证明优于单向量嵌入；CuTeDSL 降低内核编写门槛。</p>
+                    <div class="item-tags"><span class="tag">#RAG</span> <span class="tag">#Retrieval</span> <span class="tag">#DSL</span></div>
+                </article>
+
+                </div>
+            </section>
+
+
+        <footer class="keywords-footer">
+            <p>#关键词: Arcee | Trinity-Large-Thinking | Claude Code | Anthropic | GLM-5V-Turbo | Agent | TRL | Falcon Perception | OpenRouter | MemFactory</p>
+        </footer>
+
+        </main>
+
+        <footer class="footer">
+            <p>© 2026 AI Daily · 由 Claude AI 智能生成</p>
+        </footer>
+    </div>
+</body>
+</html>
