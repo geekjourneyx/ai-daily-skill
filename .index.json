@@ -1,8 +1,8 @@
 [
   {
-    "date": "2026-04-27",
-    "url": "2026-04-27.html",
-    "summary": "OpenAI 重组微软协议，获准在 AWS/Google 等全云平台销售模型，AGI 条款或已失效。",
-    "timestamp": "2026-04-29T05:23:48.687911"
+    "date": "2026-04-28",
+    "url": "2026-04-28.html",
+    "summary": "vLLM 发布 0.20.0 版本，引入 TurboQuant 2-bit KV 缓存及对 DeepSeek V4 的优化支持。",
+    "timestamp": "2026-04-30T05:27:48.272071"
   }
 ]
