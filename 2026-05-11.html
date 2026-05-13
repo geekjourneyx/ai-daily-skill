@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Daily · 2026年5月11日 星期一</title>
+    <meta name="description" content="每日 AI 前沿资讯，智能分类，快速掌握核心动态">
+    <meta name="keywords" content="Thinking Machines, OpenAI, Full-duplex, Daybreak, Agent, SWE-Bench, TurboQuant, Diffusion, Local Models, AI, 人工智能, 机器学习, 深度学习, 资讯, 日报">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body data-theme="blue">
+    <div class="background-glow"></div>
+    <div class="geometric-lines"></div>
+
+    <div class="container">
+        <header class="header">
+            <div class="logo-icon">🤖</div>
+            <h1>AI Daily</h1>
+            <div class="date-badge">2026年5月11日 星期一</div>
+        </header>
+
+        <main class="main-content">
+
+            <section class="summary-card">
+                <h2 class="section-title">📌 今日核心摘要</h2>
+                <ul class="summary-list">
+                <li class="summary-item">Thinking Machines 展示原生全双工交互模型，突破传统 LLM 轮次限制。</li>
+                <li class="summary-item">OpenAI 成立 Deployment Company 并推出 Daybreak，深入企业级部署与网络安全。</li>
+                <li class="summary-item">Agent 控制平面与本地工具链成熟，可视化管理与热切换成为新标准。</li>
+                <li class="summary-item">基准测试转向模型+工具链联合评估，揭示成本与性能的巨大差异。</li>
+                <li class="summary-item">研究显示长上下文可能导致“记忆诅咒”，影响 Agent 长期任务表现。</li>
+                </ul>
+            </section>
+
+
+            <section class="category-section">
+                <div class="category-header">
+                    <span class="category-icon">🤖</span>
+                    <h2 class="category-title">模型发布</h2>
+                    <span class="category-count">2</span>
+                </div>
+                <div class="news-grid">
+
+                <article class="news-card">
+                    <div class="news-card-header">
+                        <h3 class="news-title">Thinking Machines 原生交互模型</h3>
+                        <a href="https://x.com/thinkymachines/status/2053938892152435174" class="item-link" target="_blank" rel="noopener">详情</a>
+                    </div>
+                    <p class="news-summary">从零训练的全双工多模态模型，支持实时并发听、说、看、思考与工具使用，无需轮次边界。</p>
+                    <div class="item-tags"><span class="tag">#Thinking Machines</span> <span class="tag">#Realtime</span> <span class="tag">#Multimodal</span></div>
+                </article>
+
+                <article class="news-card">
+                    <div class="news-card-header">
+                        <h3 class="news-title">OpenAI Daybreak 与 GPT-5.5-Cyber</h3>
+                        <a href="https://x.com/OpenAI/status/2053939702110269822" class="item-link" target="_blank" rel="noopener">详情</a>
+                    </div>
+                    <p class="news-summary">针对网络防御的专项模型与工作流，包含漏洞发现、补丁生成及分级访问控制。</p>
+                    <div class="item-tags"><span class="tag">#OpenAI</span> <span class="tag">#Cybersecurity</span> <span class="tag">#GPT-5.5</span></div>
+                </article>
+
+                </div>
+            </section>
+
+            <section class="category-section">
+                <div class="category-header">
+                    <span class="category-icon">💼</span>
+                    <h2 class="category-title">产品动态</h2>
+                    <span class="category-count">2</span>
+                </div>
+                <div class="news-grid">
+
+                <article class="news-card">
+                    <div class="news-card-header">
+                        <h3 class="news-title">OpenAI Deployment Company</h3>
+                        <a href="https://x.com/OpenAI/status/2053824997777457651" class="item-link" target="_blank" rel="noopener">详情</a>
+                    </div>
+                    <p class="news-summary">收购 Tomoro 组建新部门，投入 150 名工程师帮助企业部署前沿模型，深耕部署层。</p>
+                    <div class="item-tags"><span class="tag">#OpenAI</span> <span class="tag">#Enterprise</span> <span class="tag">#Tomoro</span></div>
+                </article>
+
+                <article class="news-card">
+                    <div class="news-card-header">
+                        <h3 class="news-title">Agent 控制工具涌现</h3>
+                        <a href="https://x.com/itsclelia/status/2053716807748567329" class="item-link" target="_blank" rel="noopener">详情</a>
+                    </div>
+                    <p class="news-summary">aggit (Rust CLI) 和 Claude Code 终端控制面推出，解决 Agent 状态管理与可逆性问题。</p>
+                    <div class="item-tags"><span class="tag">#Agents</span> <span class="tag">#Tooling</span> <span class="tag">#CLI</span></div>
+                </article>
+
+                </div>
+            </section>
+
+            <section class="category-section">
+                <div class="category-header">
+                    <span class="category-icon">🛠️</span>
+                    <h2 class="category-title">工具框架</h2>
+                    <span class="category-count">2</span>
+                </div>
+                <div class="news-grid">
+
+                <article class="news-card">
+                    <div class="news-card-header">
+                        <h3 class="news-title">Deep Agents CLI 热切换</h3>
+                        <a href="https://x.com/masondrxy/status/2053717333433340034" class="item-link" target="_blank" rel="noopener">详情</a>
+                    </div>
+                    <p class="news-summary">实现对话中无缝切换底层模型提供商且不丢失上下文，提升系统灵活性。</p>
+                    <div class="item-tags"><span class="tag">#Deep Agents</span> <span class="tag">#Context</span> <span class="tag">#Routing</span></div>
+                </article>
+
+                <article class="news-card">
+                    <div class="news-card-header">
+                        <h3 class="news-title">TurboQuant 遭质疑</h3>
+                        <a href="https://x.com/_EldarKurtic/status/2053809592061030546" class="item-link" target="_blank" rel="noopener">详情</a>
+                    </div>
+                    <p class="news-summary">独立研究表明该量化技术在精度、延迟和吞吐率上表现不佳，引发社区信任危机。</p>
+                    <div class="item-tags"><span class="tag">#TurboQuant</span> <span class="tag">#Quantization</span> <span class="tag">#vLLM</span></div>
+                </article>
+
+                </div>
+            </section>
+
+            <section class="category-section">
+                <div class="category-header">
+                    <span class="category-icon">📚</span>
+                    <h2 class="category-title">研究论文</h2>
+                    <span class="category-count">2</span>
+                </div>
+                <div class="news-grid">
+
+                <article class="news-card">
+                    <div class="news-card-header">
+                        <h3 class="news-title">Agent 长期行为研究</h3>
+                        <a href="https://x.com/omarsar0/status/2053863994499408214" class="item-link" target="_blank" rel="noopener">详情</a>
+                    </div>
+                    <p class="news-summary">“记忆诅咒”指出长历史会降低合作意愿；目标澄清在执行 10% 后价值急剧下降。</p>
+                    <div class="item-tags"><span class="tag">#Agents</span> <span class="tag">#Memory</span> <span class="tag">#Cooperation</span></div>
+                </article>
+
+                <article class="news-card">
+                    <div class="news-card-header">
+                        <h3 class="news-title">扩散模型用于语言建模</h3>
+                        <a href="https://x.com/JulieKallini/status/2053853543552217478" class="item-link" target="_blank" rel="noopener">详情</a>
+                    </div>
+                    <p class="news-summary">Fast BLT 等研究利用扩散进行并行字节解码，减少推理瓶颈，支持梯度直接回流。</p>
+                    <div class="item-tags"><span class="tag">#Diffusion</span> <span class="tag">#Byte-level</span> <span class="tag">#Inference</span></div>
+                </article>
+
+                </div>
+            </section>
+
+            <section class="category-section">
+                <div class="category-header">
+                    <span class="category-icon">🏆</span>
+                    <h2 class="category-title">行业事件</h2>
+                    <span class="category-count">1</span>
+                </div>
+                <div class="news-grid">
+
+                <article class="news-card">
+                    <div class="news-card-header">
+                        <h3 class="news-title">Coding Agent Index 发布</h3>
+                        <a href="https://x.com/ArtificialAnlys/status/2053865095076438427" class="item-link" target="_blank" rel="noopener">详情</a>
+                    </div>
+                    <p class="news-summary">新基准测试模型+工具链组合，显示不同配对下成本差异超 30 倍，Opus 4.7 暂居首。</p>
+                    <div class="item-tags"><span class="tag">#Benchmark</span> <span class="tag">#SWE-Bench</span> <span class="tag">#Evaluation</span></div>
+                </article>
+
+                </div>
+            </section>
+
+
+        <footer class="keywords-footer">
+            <p>#关键词: Thinking Machines | OpenAI | Full-duplex | Daybreak | Agent | SWE-Bench | TurboQuant | Diffusion | Local Models</p>
+        </footer>
+
+        </main>
+
+        <footer class="footer">
+            <p>© 2026 AI Daily · 由 Claude AI 智能生成</p>
+        </footer>
+    </div>
+</body>
+</html>
