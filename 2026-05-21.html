@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Daily · 2026年5月21日 星期四</title>
+    <meta name="description" content="每日 AI 前沿资讯，智能分类，快速掌握核心动态">
+    <meta name="keywords" content="Gated DeltaNet-2, Modal, Codex, RAEv2, Turbopuffer, Hark, Gemini 3.5 Flash, Data Filtering, Agent Infrastructure, vLLM, AI, 人工智能, 机器学习, 深度学习, 资讯, 日报">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body data-theme="blue">
+    <div class="background-glow"></div>
+    <div class="geometric-lines"></div>
+
+    <div class="container">
+        <header class="header">
+            <div class="logo-icon">🤖</div>
+            <h1>AI Daily</h1>
+            <div class="date-badge">2026年5月21日 星期四</div>
+        </header>
+
+        <main class="main-content">
+
+            <section class="summary-card">
+                <h2 class="section-title">📌 今日核心摘要</h2>
+                <ul class="summary-list">
+                <li class="summary-item">NVIDIA 发布 Gated DeltaNet-2，在 1.3B 参数规模下性能超越 Mamba-3，长上下文检索能力显著提升。</li>
+                <li class="summary-item">AI 基础设施公司 Modal 完成 3.55 亿美元 C 轮融资，估值 46.5 亿美元，专为 AI 工作负载重构云栈。</li>
+                <li class="summary-item">OpenAI Codex 推出远程控制功能，支持手机远程操作锁屏状态下的 Mac，标志着 Agent 向跨设备工作流演进。</li>
+                <li class="summary-item">研究显示在足够算力（1e30 FLOPs）下，数据清洗可能并非必须，最佳策略可能是“无过滤器”。</li>
+                <li class="summary-item">Runway 发布 Aleph 2.0 及 Edit Studio，支持编辑单帧并传播至全视频，视频生成更具组合性。</li>
+                </ul>
+            </section>
+
+
+            <section class="category-section">
+                <div class="category-header">
+                    <span class="category-icon">🤖</span>
+                    <h2 class="category-title">模型发布</h2>
+                    <span class="category-count">3</span>
+                </div>
+                <div class="news-grid">
+
+                <article class="news-card">
+                    <div class="news-card-header">
+                        <h3 class="news-title">NVIDIA Gated DeltaNet-2</h3>
+                        <a href="https://x.com/ahatamiz1/status/2057586630450610673" class="item-link" target="_blank" rel="noopener">详情</a>
+                    </div>
+                    <p class="news-summary">解耦线性注意力中的擦除和写入操作，在 1.3B 参数规模下超越 KDA 和 Mamba-3，RULER 检索能力大幅提升。</p>
+                    <div class="item-tags"><span class="tag">#NVIDIA</span> <span class="tag">#DeltaNet</span> <span class="tag">#Mamba</span> <span class="tag">#Linear Attention</span></div>
+                </article>
+
+                <article class="news-card">
+                    <div class="news-card-header">
+                        <h3 class="news-title">RAEv2 表征优先分词器</h3>
+                        <a href="https://x.com/1jaskiratsingh/status/2057568174590304421" class="item-link" target="_blank" rel="noopener">详情</a>
+                    </div>
+                    <p class="news-summary">RAEv2 实现超过 10 倍的收敛速度提升，通过求和最后 K 层编码器层改进重建与生成，无需额外推理成本。</p>
+                    <div class="item-tags"><span class="tag">#RAE</span> <span class="tag">#Tokenization</span> <span class="tag">#World Models</span></div>
+                </article>
+
+                <article class="news-card">
+                    <div class="news-card-header">
+                        <h3 class="news-title">Gemini 3.5 Flash 登顶 APEX</h3>
+                        <a href="https://x.com/OfficialLoganK/status/2057460544643404125" class="item-link" target="_blank" rel="noopener">详情</a>
+                    </div>
+                    <p class="news-summary">Gemini 3.5 Flash 在 APEX-Agents-AA 排行榜中排名第一，超越更大参数的模型，并展示了单 API 调用构建复杂 Agent 的能力。</p>
+                    <div class="item-tags"><span class="tag">#Google</span> <span class="tag">#Gemini</span> <span class="tag">#Agent</span></div>
+                </article>
+
+                </div>
+            </section>
+
+            <section class="category-section">
+                <div class="category-header">
+                    <span class="category-icon">📚</span>
+                    <h2 class="category-title">研究论文</h2>
+                    <span class="category-count">3</span>
+                </div>
+                <div class="news-grid">
+
+                <article class="news-card">
+                    <div class="news-card-header">
+                        <h3 class="news-title">数据过滤的缩放定律</h3>
+                        <a href="https://x.com/tatsu_hashimoto/status/2057489411768803526" class="item-link" target="_blank" rel="noopener">详情</a>
+                    </div>
+                    <p class="news-summary">DCLM 研究表明，在拥有足够算力（约 1e30 FLOPs）的情况下，不进行数据过滤可能是最佳策略。</p>
+                    <div class="item-tags"><span class="tag">#Data Filtering</span> <span class="tag">#Scaling Laws</span> <span class="tag">#DCLM</span></div>
+                </article>
+
+                <article class="news-card">
+                    <div class="news-card-header">
+                        <h3 class="news-title">子词分词的消融研究</h3>
+                        <a href="https://x.com/NousResearch/status/2057610978934546805" class="item-link" target="_blank" rel="noopener">详情</a>
+                    </div>
+                    <p class="news-summary">NousResearch 研究发现，在假设的七个子词分词优势中，只有三项在 1.7B 字节级模型中显著降低了验证损失。</p>
+                    <div class="item-tags"><span class="tag">#Tokenization</span> <span class="tag">#NousResearch</span></div>
+                </article>
+
+                <article class="news-card">
+                    <div class="news-card-header">
+                        <h3 class="news-title">SAE 几何结构的修正</h3>
+                        <a href="https://x.com/GoodfireAI/status/2057487848258101551" class="item-link" target="_blank" rel="noopener">详情</a>
+                    </div>
+                    <p class="news-summary">GoodfireAI 提出通过聚类 SAE 特征的联合激活模式来恢复几何结构，建议解释应从单一特征转向结构化集成。</p>
+                    <div class="item-tags"><span class="tag">#Mechanistic Interpretability</span> <span class="tag">#SAE</span> <span class="tag">#Goodfire</span></div>
+                </article>
+
+                </div>
+            </section>
+
+            <section class="category-section">
+                <div class="category-header">
+                    <span class="category-icon">🛠️</span>
+                    <h2 class="category-title">工具框架</h2>
+                    <span class="category-count">4</span>
+                </div>
+                <div class="news-grid">
+
+                <article class="news-card">
+                    <div class="news-card-header">
+                        <h3 class="news-title">OpenAI Codex 产品层更新</h3>
+                        <a href="https://x.com/OpenAIDevs/status/2057536706778378692" class="item-link" target="_blank" rel="noopener">详情</a>
+                    </div>
+                    <p class="news-summary">推出 Appshots 增加上下文，支持团队插件共享，并允许从手机安全远程操作锁屏的 Mac，向跨设备工作流迈进。</p>
+                    <div class="item-tags"><span class="tag">#OpenAI</span> <span class="tag">#Codex</span> <span class="tag">#Remote Control</span></div>
+                </article>
+
+                <article class="news-card">
+                    <div class="news-card-header">
+                        <h3 class="news-title">LangChain 安全沙箱与流式协议</h3>
+                        <a href="https://x.com/LangChain/status/2057508777759236401" class="item-link" target="_blank" rel="noopener">详情</a>
+                    </div>
+                    <p class="news-summary">引入沙箱 Auth Proxy 控制边界，并发布新的类型化流式协议，将工具和子代理作为一等公民渲染。</p>
+                    <div class="item-tags"><span class="tag">#LangChain</span> <span class="tag">#Security</span> <span class="tag">#Streaming</span></div>
+                </article>
+
+                <article class="news-card">
+                    <div class="news-card-header">
+                        <h3 class="news-title">vLLM 弹性专家并行</h3>
+                        <a href="https://x.com/vllm_project/status/2057602243860574463" class="item-link" target="_blank" rel="noopener">详情</a>
+                    </div>
+                    <p class="news-summary">支持在不完全重启的情况下实时调整 MoE 拓扑，利用 NVLink/RDMA 进行 GPU 间传输，提升容错服务能力。</p>
+                    <div class="item-tags"><span class="tag">#vLLM</span> <span class="tag">#MoE</span> <span class="tag">#Infrastructure</span></div>
+                </article>
+
+                <article class="news-card">
+                    <div class="news-card-header">
+                        <h3 class="news-title">Weaviate 内置 MCP 服务器</h3>
+                        <a href="https://x.com/weaviate_io/status/2057476556449010024" class="item-link" target="_blank" rel="noopener">详情</a>
+                    </div>
+                    <p class="news-summary">在数据库内构建 MCP 服务器，使编码代理无需额外进程即可摄取代码库并使用混合 BM25 + 向量检索。</p>
+                    <div class="item-tags"><span class="tag">#Weaviate</span> <span class="tag">#MCP</span> <span class="tag">#Retrieval</span></div>
+                </article>
+
+                </div>
+            </section>
+
+            <section class="category-section">
+                <div class="category-header">
+                    <span class="category-icon">💰</span>
+                    <h2 class="category-title">融资并购</h2>
+                    <span class="category-count">3</span>
+                </div>
+                <div class="news-grid">
+
+                <article class="news-card">
+                    <div class="news-card-header">
+                        <h3 class="news-title">Modal 完成 3.55 亿美元 C 轮融资</h3>
+                        <a href="https://x.com/bernhardsson/status/2057530320790995262" class="item-link" target="_blank" rel="noopener">详情</a>
+                    </div>
+                    <p class="news-summary">AI 云基础设施公司 Modal 估值达到 46.5 亿美元，致力于为 AI 工作负载从零重建云栈。</p>
+                    <div class="item-tags"><span class="tag">#Modal</span> <span class="tag">#Series C</span> <span class="tag">#Cloud Infrastructure</span></div>
+                </article>
+
+                <article class="news-card">
+                    <div class="news-card-header">
+                        <h3 class="news-title">Turbopuffer 年化收入达 1 亿美元</h3>
+                        <a href="https://x.com/Sirupsen/status/2057470756070781400" class="item-link" target="_blank" rel="noopener">详情</a>
+                    </div>
+                    <p class="news-summary">向量数据库公司 Turbopuffer 在 19 个月内收入从 100 万美元增长至 1 亿美元 run-rate，且保持盈利。</p>
+                    <div class="item-tags"><span class="tag">#Turbopuffer</span> <span class="tag">#Vector DB</span> <span class="tag">#Profitable</span></div>
+                </article>
+
+                <article class="news-card">
+                    <div class="news-card-header">
+                        <h3 class="news-title">Hark 融资 7 亿美元</h3>
+                        <a href="https://x.com/adcock_brett/status/2057462134989263047" class="item-link" target="_blank" rel="noopener">详情</a>
+                    </div>
+                    <p class="news-summary">专注于 GPU 基础设施、硬件和多模态产品的公司 Hark 融资 7 亿美元，估值 60 亿美元。</p>
+                    <div class="item-tags"><span class="tag">#Hark</span> <span class="tag">#Hardware</span> <span class="tag">#Robotics</span></div>
+                </article>
+
+                </div>
+            </section>
+
+            <section class="category-section">
+                <div class="category-header">
+                    <span class="category-icon">💼</span>
+                    <h2 class="category-title">产品动态</h2>
+                    <span class="category-count">3</span>
+                </div>
+                <div class="news-grid">
+
+                <article class="news-card">
+                    <div class="news-card-header">
+                        <h3 class="news-title">Runway Aleph 2.0 与 Edit Studio</h3>
+                        <a href="https://x.com/runwayml/status/2057530497597600169" class="item-link" target="_blank" rel="noopener">详情</a>
+                    </div>
+                    <p class="news-summary">发布新的视频生成模型 Aleph 2.0 及 Edit Studio，支持编辑单帧并将更改传播至整个视频。</p>
+                    <div class="item-tags"><span class="tag">#Runway</span> <span class="tag">#Video Generation</span> <span class="tag">#Editing</span></div>
+                </article>
+
+                <article class="news-card">
+                    <div class="news-card-header">
+                        <h3 class="news-title">Gemini 扩展 Agent 动作表面</h3>
+                        <a href="https://x.com/GeminiApp/status/2057550225863246236" class="item-link" target="_blank" rel="noopener">详情</a>
+                    </div>
+                    <p class="news-summary">Google 推出 Daily Brief，并连接 OpenTable、Canva 和 Instacart 等应用，实质上是面向消费者的 Agent 工作流。</p>
+                    <div class="item-tags"><span class="tag">#Google</span> <span class="tag">#Gemini</span> <span class="tag">#Consumer Agent</span></div>
+                </article>
+
+                <article class="news-card">
+                    <div class="news-card-header">
+                        <h3 class="news-title">Physics-intern 科学测试工具</h3>
+                        <a href="https://x.com/lvwerra/status/2057476832664953225" class="item-link" target="_blank" rel="noopener">详情</a>
+                    </div>
+                    <p class="news-summary">发布科学问题测试工具，使 Gemini 3.1 Pro 分数从 17.7 提升至 31.4，超越了 GPT 5.5 Pro。</p>
+                    <div class="item-tags"><span class="tag">#Harness</span> <span class="tag">#Benchmark</span> <span class="tag">#Science</span></div>
+                </article>
+
+                </div>
+            </section>
+
+
+        <footer class="keywords-footer">
+            <p>#关键词: Gated DeltaNet-2 | Modal | Codex | RAEv2 | Turbopuffer | Hark | Gemini 3.5 Flash | Data Filtering | Agent Infrastructure | vLLM</p>
+        </footer>
+
+        </main>
+
+        <footer class="footer">
+            <p>© 2026 AI Daily · 由 Claude AI 智能生成</p>
+        </footer>
+    </div>
+</body>
+</html>
